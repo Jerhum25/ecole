@@ -216,7 +216,8 @@ main section#contact button{
 	/* page accueil */
 	main .general{
 		background-position: center;
-		background-position-y: -200px;
+		background-position-y: -190px;
+		height: 84vh;
 		
 	}
 	main .general h2{
