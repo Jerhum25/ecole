@@ -83,7 +83,7 @@ header nav ul li a:hover{
 /* page accueil */
 main .general{
 	background: url("./images/ecole.JPG");
-	/* background-repeat: no-repeat; */
+	background-repeat: no-repeat;
 	background-size: cover;
 	/* object-position: center; */
 	width: 100%;
@@ -295,14 +295,15 @@ footer .contenu .coordronnees a{
 	/* page accueil */
 	main .general{
 		background-position: center;
-		background-position-y: -190px;
-		height: 84vh;
+		/* background-position-y: -90px; */
+		/* height: 120%; */
+		/* width: 100%; */
 		
 	}
 	main .general h2{
 		font-size: 25px;
 		width: 95%;
-		padding-top: 40px;
+		padding-top: 240px;
 	}
 
 
