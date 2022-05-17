@@ -83,11 +83,11 @@ header nav ul li a:hover{
 /* page accueil */
 main .general{
 	background: url("./images/ecole.JPG");
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat; */
 	background-size: cover;
-	object-position: center;
+	/* object-position: center; */
 	width: 100%;
-	height: 90vh;
+	height: 88vh;
 }
 main .general h2{
 	width: 60%;
@@ -100,53 +100,91 @@ main .general h2{
 	font-weight: 600;
 }
 
-
-
-
-
-
-
-
-/* footer */
-footer{
-	background: rgb(151, 32, 151);
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	padding: 15px 0;
-}
-footer .contenu{
-	width: 30%;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 20px;
-}
-footer .contenu .liens{
+/* page classes */
+main#classes{
 	display: flex;
 	flex-direction: column;
-}
-footer .contenu .liens a{
-	color: #fff;
-	line-height: 25px;
-}
-footer .contenu .coordronnees{
-	display: flex;
+	justify-content: center;
 	align-items: center;
 }
-footer .contenu .coordronnees i{
-	margin-right: 20px;
-	color: #fff;
-	font-size: 45px;
+main#classes h1{
+	font-size: 35px;
+	font-weight: 600;
+	margin: 50px 0;
 }
-footer .contenu .coordronnees a{
-	color: #fff;
+main#classes .cards{
+	width: 70%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	justify-content: center;
+	margin-bottom: 50px;
+
+}
+main#classes .cards .card{
+	width: 600px;
+	overflow: hidden;
+	padding: 15px;
+	/* border: 2px solid grey; */
+	box-shadow: 10px 10px 10px #999;
+
+}
+main#classes .cards .card img{
+	object-fit: cover;
+	width: 100%;
+}
+main#classes .cards .card h2{
+	text-align: center;
+	font-weight: 600;
+	font-size: 20px;
 	line-height: 25px;
+	margin-top: 15px;
 }
 
 
+/* page enseignants */
 
+main#enseignants{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+main#enseignants h1{
+	font-size: 35px;
+	font-weight: 600;
+	margin: 50px 0;
+}
+main#enseignants .cards{
+	width: 50%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	justify-content: center;
+	margin-bottom: 50px;
+
+}
+main#enseignants .cards .card{
+	width: 400px;
+	overflow: hidden;
+	padding: 15px;
+	/* border: 2px solid grey; */
+	box-shadow: 10px 10px 10px #999;
+
+}
+main#enseignants .cards .card img{
+	object-fit: cover;
+	width: 100%;
+}
+main#enseignants .cards .card h2{
+	text-align: center;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
+	margin-top: 15px;
+}
 
 
 /* Page contact */
@@ -157,10 +195,11 @@ main section#contact{
 	border: 3px solid #999;
 	width: fit-content;
 	padding: 100px;
-	position: absolute;
+	margin: 110px auto;
+	/* position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
 	text-align: center;
 }
 main section#contact h1{
@@ -197,6 +236,46 @@ main section#contact button{
 
 
 
+/* footer */
+footer{
+	background: rgb(151, 32, 151);
+	/* position: absolute;
+	bottom: 0; */
+	width: 100%;
+	padding: 15px 0;
+}
+footer .contenu{
+	width: 30%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+}
+footer .contenu .liens{
+	display: flex;
+	flex-direction: column;
+}
+footer .contenu .liens a{
+	color: #fff;
+	line-height: 25px;
+}
+footer .contenu .coordronnees{
+	display: flex;
+	align-items: center;
+}
+footer .contenu .coordronnees i{
+	margin-right: 20px;
+	color: #fff;
+	font-size: 45px;
+}
+footer .contenu .coordronnees a{
+	color: #fff;
+	line-height: 25px;
+}
+
+
+
 @media screen and (max-width: 768px){
 	header{
 		flex-direction: row-reverse;
@@ -227,7 +306,16 @@ main section#contact button{
 	}
 
 
+	/* page classes */
+	main#classes .cards{
+		width: 95%;
+	}
 
+
+	/* page enseignants */
+	main#enseignants .cards{
+		width: 95%;
+	}
 
 
 
@@ -235,9 +323,9 @@ main section#contact button{
 	main section#contact{
 		border: none;
 		width: 95%;
-		position: initial;
-		transform: translate(0);
-		margin: 25px auto;
+		/* position: initial;
+		transform: translate(0); */
+		margin: 67px auto;
 		padding: 0;
 		/* top: 40%; */
 	}
